@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: ReplicaSet
+metadata:
+  name: python
+  labels:
+    app: webserver
+  annotations:
+    kubernetes.io/change-cause: "Update python to 1.7.9"
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: webserver
+  template:
+    metadata:
+      labels:
+        app: webserver
+    spec:
+      containers:
+        - name: python
+          image: sprx7767/kfood:latest
+          ports:
+            - containerPort: 8000
