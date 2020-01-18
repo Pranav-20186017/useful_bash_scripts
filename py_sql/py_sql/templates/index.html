@@ -1,0 +1,19 @@
+<html>
+    {% block content %}
+<head></head>
+<body>
+<form method="POST">
+    {% csrf_token %}
+    <center>
+    <p style="margin-top: 5%;">Enter your ID</p>
+    <input type="text" name="roll" id="roll" style="margin-bottom: 10%;margin-top: 2%;"><br>
+    <input type="submit">
+</center>
+</form>
+
+
+</body>
+
+
+</html>
+{% endblock %}

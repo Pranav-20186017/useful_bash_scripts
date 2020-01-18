@@ -1,0 +1,40 @@
+<html>
+    {% block content %}
+    <head>
+        <style>
+        td {
+            text-align:center
+        }
+        table {
+            margin-top: 10%;
+        }
+    </style>
+    </head>
+    <body>
+        <center>
+        <table border="1">
+            <tr>
+                <td>ID</td>
+                <td>Subject 1</td>
+                <td>Subject 2</td>
+                <td>Subject 3</td>
+                <td>Subject 4</td>
+                <td>Subject 5</td>
+                <td>Subject 6</td>
+            </tr>
+            
+            
+    <tr>
+        <td>{{id}}</td> 
+        <td>{{ one }}</td>
+        <td>{{ two }}</td>
+        <td>{{ three }}</td>
+        <td>{{ four }}</td>
+        <td>{{ five }}</td>
+        <td>{{ six }}</td>
+    </tr>
+        </table>
+    </center>
+    </body>
+</html>
+{% endblock %}
